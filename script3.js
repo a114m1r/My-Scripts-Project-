@@ -1,4 +1,8 @@
-function getMessage() {
-  return "hello from script 3";
+function cleanText(text) {
+  return text.trim();
+}
+
+function formatOutput(title, body) {
+  return `${title}: ${body}`;
 }
 
