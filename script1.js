@@ -1,13 +1,13 @@
 function runApp() {
-  const message = getMessage();
-  const result = processMessage(message);
-  document.getElementById("output").textContent = result;
-}
-function runApp() {
-  console.log("runApp started");
-  const message = getMessage();
-  console.log("message:", message);
-  const result = processMessage(message);
-  console.log("result:", result);
+  const studentInput = document.getElementById("studentInput").value;
+  const taskType = document.getElementById("taskType").value;
+
+  console.log("Input:", studentInput);
+  console.log("Task:", taskType);
+
+  const result = processStudentTask(studentInput, taskType);
+
+  console.log("Result:", result);
+
   document.getElementById("output").textContent = result;
 }
