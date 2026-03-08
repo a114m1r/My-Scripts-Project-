@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Scripts Project</title>
+  <title>Class Assistant</title>
 </head>
 <body>
-  <h1>My Scripts Project</h1>
-  <p>Deployment is working.</p>
+  <h1>Class Assistant</h1>
+  <p>Ask a school question and choose what you want the app to do.</p>
 
-  <button onclick="runApp()">Run Scripts</button>
+  <textarea id="studentInput" rows="6" cols="50" placeholder="Type your class question here..."></textarea>
+  <br><br>
+
+  <select id="taskType">
+    <option value="explain">Explain</option>
+    <option value="summarize">Summarize</option>
+    <option value="quiz">Make Quiz</option>
+  </select>
+
+  <button onclick="runApp()">Run Assistant</button>
+
+  <h2>Result</h2>
   <p id="output">Waiting...</p>
 
   <script src="script3.js"></script>
